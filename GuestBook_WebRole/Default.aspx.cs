@@ -28,6 +28,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Queue;
 using GuestBook_Data;
+using Microsoft.Azure;
 
 namespace GuestBook_WebRole
 {

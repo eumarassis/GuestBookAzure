@@ -31,6 +31,7 @@ using System.IO;
 using GuestBook_Data;
 using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.Azure;
 
 namespace GuestBook_WorkerRole
 {
