@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Windows Azure Guestbook</title>
+    <title>Azure Guestbook</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
     <div class="general">
         <div class="title">
             <h1>
-                Windows Azure GuestBook
+                Microsoft Azure GuestBook
             </h1>
         </div>
         <div class="inputSection">

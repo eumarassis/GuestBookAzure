@@ -12,6 +12,7 @@
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Imports>
+      <Import moduleName="RemoteAccess" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
@@ -20,6 +21,8 @@
   </WebRole>
   <WorkerRole name="GuestBook_WorkerRole" vmsize="Small">
     <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />

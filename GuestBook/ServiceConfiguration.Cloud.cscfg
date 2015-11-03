@@ -3,15 +3,30 @@
   <Role name="GuestBook_WebRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageappservercontoso;AccountKey=3lD5ML2t/ldyPrPNltYZ3vJP7jmtRdlktXU/fPaniOL8vx4Hcnarbh4Wp/gGH+pA7k/ebuUbqg12NG78BEzkEw==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageappservercontoso;AccountKey=3lD5ML2t/ldyPrPNltYZ3vJP7jmtRdlktXU/fPaniOL8vx4Hcnarbh4Wp/gGH+pA7k/ebuUbqg12NG78BEzkEw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="azure" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHMXyqdBFQeOQ7MiMAdH+BAwDQYJKoZIhvcNAQEBBQAEggEApJvTQ6Uad81FEcMsubMSXMGXF+7D4lSGo2Tb834n73PqqChDFRq0O1kc/85UuVonsi/g0/bdGia20RU35hSa3zV09YK7mzTF9KSngmFvecpUXNwLUzqZBru2kKcpOhRJmORcIPo41emp8EmSo0rBFO6N4fX0q1F8m2krIavQ5/a//nIM7rCLRQjB/wNa9xOHy3dgWqTyfC54oJ6nTtTcnZX40eGv+u6vaxM7n7EhpIXRQ5EgH8LwKDt+HYQ6hguFRAUNfbLjbnT8GrUYj4f+5FKiuj+dVtvVx0pHYgJJ2VS7ZNafBub0ImCWEifgAkUUtCDasq+nte0meztlfJv03zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECCwFeu8ED+NDgBBiAj0HiLdRpkolITlO+HrF" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-11-03T23:59:59.0000000-04:00" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="76A9576501B27714F91FBDA0DEBCFB294BB00856" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="GuestBook_WorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageappservercontoso;AccountKey=3lD5ML2t/ldyPrPNltYZ3vJP7jmtRdlktXU/fPaniOL8vx4Hcnarbh4Wp/gGH+pA7k/ebuUbqg12NG78BEzkEw==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=storageappservercontoso;AccountKey=3lD5ML2t/ldyPrPNltYZ3vJP7jmtRdlktXU/fPaniOL8vx4Hcnarbh4Wp/gGH+pA7k/ebuUbqg12NG78BEzkEw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="azure" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHMXyqdBFQeOQ7MiMAdH+BAwDQYJKoZIhvcNAQEBBQAEggEApJvTQ6Uad81FEcMsubMSXMGXF+7D4lSGo2Tb834n73PqqChDFRq0O1kc/85UuVonsi/g0/bdGia20RU35hSa3zV09YK7mzTF9KSngmFvecpUXNwLUzqZBru2kKcpOhRJmORcIPo41emp8EmSo0rBFO6N4fX0q1F8m2krIavQ5/a//nIM7rCLRQjB/wNa9xOHy3dgWqTyfC54oJ6nTtTcnZX40eGv+u6vaxM7n7EhpIXRQ5EgH8LwKDt+HYQ6hguFRAUNfbLjbnT8GrUYj4f+5FKiuj+dVtvVx0pHYgJJ2VS7ZNafBub0ImCWEifgAkUUtCDasq+nte0meztlfJv03zAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECCwFeu8ED+NDgBBiAj0HiLdRpkolITlO+HrF" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-11-03T23:59:59.0000000-04:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="76A9576501B27714F91FBDA0DEBCFB294BB00856" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
 </ServiceConfiguration>
